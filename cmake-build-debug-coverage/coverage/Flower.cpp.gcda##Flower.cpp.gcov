@@ -1,0 +1,209 @@
+        -:    0:Source:C:/Users/user/Desktop/Projects/Flower_Shop/Domain/Flower.cpp
+        -:    0:Graph:C:\Users\user\Desktop\Projects\Flower_Shop\cmake-build-debug-coverage\CMakeFiles\Flower_Shop.dir\Domain\Flower.cpp.gcno
+        -:    0:Data:C:\Users\user\Desktop\Projects\Flower_Shop\cmake-build-debug-coverage\CMakeFiles\Flower_Shop.dir\Domain\Flower.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by user on 01.05.2022.
+        -:    3://
+        -:    4:
+        -:    5:#include "Flower.h"
+        -:    6:#include <utility>
+        -:    7:#include <cstring>
+        -:    8:
+function _ZN6FlowerC2Ev called 1 returned 100% blocks executed 62%
+        1:    9:Flower::Flower() {
+        1:    9-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+        1:   10:    this->id = 0;
+        1:   11:    this->color = "";
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   12:    this->species = "";
+        1:   12-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   13:    this->season = "";
+        1:   13-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   14:    this->price = 0;
+        1:   15:}
+        1:   15-block  0
+    $$$$$:   15-block  1
+call    0 never executed
+    $$$$$:   15-block  2
+call    1 never executed
+    $$$$$:   15-block  3
+call    2 never executed
+        -:   16:
+function _ZN6FlowerC2EjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_S5_d called 3 returned 100% blocks executed 100%
+        3:   17:Flower::Flower(unsigned int id, std::string color, std::string species, std::string season, double price) {
+        3:   17-block  0
+call    0 returned 3
+call    1 returned 3
+call    2 returned 3
+        3:   18:    this->id = id;
+        3:   19:    this->color = std::move(color);
+call    0 returned 3
+call    1 returned 3
+        3:   20:    this->species = std::move(species);
+call    0 returned 3
+call    1 returned 3
+        3:   21:    this->season = std::move(season);
+call    0 returned 3
+call    1 returned 3
+        3:   22:    this->price = price;
+        3:   23:}
+        -:   24:
+function _ZNK6Flower5getIdEv called 3 returned 100% blocks executed 100%
+        3:   25:unsigned int Flower::getId() const {
+        3:   26:    return id;
+        3:   26-block  0
+        -:   27:}
+        -:   28:
+function _ZN6Flower5setIdEj called 1 returned 100% blocks executed 100%
+        1:   29:void Flower::setId(unsigned int id) {
+        1:   30:    Flower::id = id;
+        1:   31:}
+        -:   32:
+function _ZNK6Flower8getColorB5cxx11Ev called 3 returned 100% blocks executed 100%
+        3:   33:const std::string &Flower::getColor() const {
+        3:   34:    return color;
+        3:   34-block  0
+        -:   35:}
+        -:   36:
+function _ZN6Flower8setColorERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 1 returned 100% blocks executed 100%
+        1:   37:void Flower::setColor(const std::string &color) {
+        1:   38:    Flower::color = color;
+        1:   38-block  0
+call    0 returned 1
+        1:   39:}
+        -:   40:
+function _ZNK6Flower10getSpeciesB5cxx11Ev called 3 returned 100% blocks executed 100%
+        3:   41:const std::string &Flower::getSpecies() const {
+        3:   42:    return species;
+        3:   42-block  0
+        -:   43:}
+        -:   44:
+function _ZN6Flower10setSpeciesERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 1 returned 100% blocks executed 100%
+        1:   45:void Flower::setSpecies(const std::string &species) {
+        1:   46:    Flower::species = species;
+        1:   46-block  0
+call    0 returned 1
+        1:   47:}
+        -:   48:
+function _ZNK6Flower9getSeasonB5cxx11Ev called 3 returned 100% blocks executed 100%
+        3:   49:const std::string &Flower::getSeason() const {
+        3:   50:    return season;
+        3:   50-block  0
+        -:   51:}
+        -:   52:
+function _ZN6Flower9setSeasonERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 1 returned 100% blocks executed 100%
+        1:   53:void Flower::setSeason(const std::string &season) {
+        1:   54:    Flower::season = season;
+        1:   54-block  0
+call    0 returned 1
+        1:   55:}
+        -:   56:
+function _ZNK6Flower8getPriceEv called 3 returned 100% blocks executed 100%
+        3:   57:double Flower::getPrice() const {
+        3:   58:    return price;
+        3:   58-block  0
+        -:   59:}
+        -:   60:
+function _ZN6Flower8setPriceEd called 1 returned 100% blocks executed 100%
+        1:   61:void Flower::setPrice(double price) {
+        1:   62:    Flower::price = price;
+        1:   63:}
+        -:   64:
+function _ZNK6FlowereqERKS_ called 1 returned 100% blocks executed 92%
+        1:   65:bool Flower::operator==(const Flower &rhs) const {
+        2:   66:    return color == rhs.color &&
+        1:   66-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0
+        2:   67:           species == rhs.species &&
+        1:   67-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0
+        1:   68:           season == rhs.season &&
+        1:   68-block  0
+call    0 returned 1
+       3*:   69:           price == rhs.price &&
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:   69-block  0
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0
+        1:   69-block  1
+    %%%%%:   69-block  2
+        2:   70:           id == rhs.id;
+        1:   70-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:   70-block  1
+        -:   71:}
+        -:   72:
+function _ZNK6FlowerneERKS_ called 0 returned 0% blocks executed 0%
+    #####:   73:bool Flower::operator!=(const Flower &rhs) const {
+    #####:   74:    return !(rhs == *this);
+    %%%%%:   74-block  0
+call    0 never executed
+        -:   75:}
+        -:   76:
+        -:   77:
+        -:   78:/*
+        -:   79:Flower::Flower(Flower &rhs) {
+        -:   80:   // if (*this != rhs) {
+        -:   81:        this->id = rhs.id;
+        -:   82:        this->color = rhs.color;
+        -:   83:        this->species = rhs.species;
+        -:   84:        this->season = rhs.season;
+        -:   85:        this->price = rhs.price;
+        -:   86:    //}
+        -:   87:}
+        -:   88:*/
+function _ZlsRSoRK6Flower called 0 returned 0% blocks executed 0%
+    #####:   89:std::ostream &operator<<(std::ostream &os, const Flower &flower) {
+    #####:   90:    os << "Flower{" << '\n' << "id: " << flower.id << '\n' <<
+    %%%%%:   90-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+    #####:   91:       " color: " << flower.color << '\n'
+    #####:   92:       << " species: " << flower.species << '\n' <<
+    #####:   93:       " season: " << flower.season << '\n' <<
+    #####:   94:       " price: " << flower.price << '\n'
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+call    6 never executed
+call    7 never executed
+call    8 never executed
+call    9 never executed
+call   10 never executed
+call   11 never executed
+    #####:   95:       << '}' << '\n';
+call    0 never executed
+call    1 never executed
+call    2 never executed
+    #####:   96:    return os;
+        -:   97:}
+        -:   98:
+function _ZN6FlowerD2Ev called 12 returned 100% blocks executed 100%
+       12:   99:Flower::~Flower() = default;
+       12:   99-block  0
+call    0 returned 12
+call    1 returned 12
+call    2 returned 12

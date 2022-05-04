@@ -1,0 +1,12 @@
+# ninja log v5
+36	235	6732966647863424	CMakeFiles/Flower_Shop.dir/Tests/TestController.cpp.obj	76be471f82e4130b
+16	767	6732966653087299	CMakeFiles/Flower_Shop.dir/Domain/Flower.cpp.obj	709e92e954887d57
+20	810	6732966653647064	CMakeFiles/Flower_Shop.dir/Controller/FlowerController.cpp.obj	99174652561fea28
+28	817	6732966653727041	CMakeFiles/Flower_Shop.dir/Tests/AllTests.cpp.obj	e71640bfe28cc339
+48	824	6732966653727041	CMakeFiles/Flower_Shop.dir/UI/Console.cpp.obj	dad9c984db0820d5
+40	831	6732966653807011	CMakeFiles/Flower_Shop.dir/Tests/DomainTest.cpp.obj	6a9a4f4ae0fa7a66
+0	974	6732966655368637	CMakeFiles/Flower_Shop.dir/main.cpp.obj	ecbe621d7d585f36
+974	1140	6732966656967886	Flower_Shop.exe	155d601e59000253
+7	298	6732967102122827	CMakeFiles/Flower_Shop.dir/Tests/AllTests.cpp.obj	e71640bfe28cc339
+4	386	6732967449896686	CMakeFiles/Flower_Shop.dir/Tests/TestController.cpp.obj	76be471f82e4130b
+387	527	6732967451256119	Flower_Shop.exe	155d601e59000253
