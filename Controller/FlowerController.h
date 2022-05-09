@@ -5,6 +5,7 @@
 #include <string>
 #include "../Domain/Flower.h"
 #include "../Repository/IRepo.h"
+#include <vector>
 
 #ifndef FLOWER_SHOP_FLOWERCONTROLLER_H
 #define FLOWER_SHOP_FLOWERCONTROLLER_H
@@ -16,7 +17,7 @@ private:
     unsigned int next_id = 1;
 public:
 
-    FlowerController(IRepo<Flower> &Irepo);
+    explicit FlowerController(IRepo<Flower> &Irepo);
 
     ~FlowerController() = default;
 
@@ -25,6 +26,10 @@ public:
     void removeFlower(int id);
 
     void updateFlower(int id, std::string color, std::string species, std::string season, double price);
+
+    void undo();
+
+    void redo();
 
     std::vector<Flower> readFlowers();
 };

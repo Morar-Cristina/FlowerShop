@@ -14,7 +14,8 @@ void TestController::test() {
 
     controller.addFlower("blue", "tulip", "summer", 12);
     controller.addFlower("green", "cactus", "winter", 25);
-    std::vector<Flower> flower = controller.readFlowers();
-    assert(flower.size()==2);
-
+    assert(controller.readFlowers().size() == 2);
+    controller.removeFlower(1);
+    assert(controller.readFlowers().size() == 1);
+    controller.updateFlower(2, "red", "tulip", "autumn", 30);
 }

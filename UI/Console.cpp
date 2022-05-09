@@ -12,6 +12,8 @@ void Console::showMenu() {
     std::cout << "2. Show flowers" << '\n';
     std::cout << "3. Remove flower" << '\n';
     std::cout << "4. Update flower" << '\n';
+    std::cout << "u. Undo" << '\n';
+    std::cout << "r. Redo" << '\n';
     std::cout << "x. Exit" << '\n';
     std::cout << "Option: ";
 }
@@ -73,6 +75,24 @@ void Console::runMenu() {
                 std::cin >> price;
                 try {
                     controller.updateFlower(id, color, species, season, price);
+                }
+                catch (std::invalid_argument &e) {
+                    std::cout << e.what();
+                }
+                break;
+            }
+            case 'u': {
+                try {
+                    controller.undo();
+                }
+                catch (std::invalid_argument &e) {
+                    std::cout << e.what();
+                }
+                break;
+            }
+            case 'r': {
+                try {
+                    controller.redo();
                 }
                 catch (std::invalid_argument &e) {
                     std::cout << e.what();

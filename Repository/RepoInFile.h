@@ -14,13 +14,13 @@ private:
     std::vector<T> elements;
     std::string file_name;
 public:
-    RepoInFile(std::string file_name){
-        this->file_name=file_name;
+    RepoInFile(std::string file_name) {
+        this->file_name = file_name;
     }
 
     ~RepoInFile() = default;
 
-    void create(T elem) override{
+    void create(T elem) override {
 
     }
 };

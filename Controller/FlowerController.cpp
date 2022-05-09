@@ -2,17 +2,16 @@
 // Created by user on 02.05.2022.
 //
 
+#include <iostream>
 #include "FlowerController.h"
 #include "../Domain/Flower.h"
 
 FlowerController::FlowerController(IRepo<Flower> &Irepo) : repo(Irepo) {}
 
-void
-FlowerController::addFlower(std::string color, std::string species, std::string season, double price) {
+void FlowerController::addFlower(std::string color, std::string species, std::string season, double price) {
     Flower flower(this->next_id, color, species, season, price);
     repo.create(flower);
     this->next_id++;
-
 }
 
 std::vector<Flower> FlowerController::readFlowers() {
@@ -44,7 +43,16 @@ void FlowerController::updateFlower(int id, std::string color, std::string speci
     if (oldFlower.getId() == 0)
         throw std::invalid_argument("No flower has been found");
     repo.update(oldFlower, newFlower);
-
 }
+
+void FlowerController::undo() {
+    repo.undo();
+}
+
+void FlowerController::redo() {
+    repo.redo();
+}
+
+
 
 

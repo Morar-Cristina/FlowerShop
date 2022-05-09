@@ -20,6 +20,10 @@ public:
     virtual void update(T old_elem, T new_elem) = 0;
 
     virtual void remove(T elem) = 0;
+
+    virtual void undo() = 0;
+
+    virtual void redo() = 0;
 };
 
 
