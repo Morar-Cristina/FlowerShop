@@ -1,3 +1,3 @@
-C:/Users/user/Desktop/Projects/Flower_Shop/cmake-build-debug/CMakeFiles/Flower_Shop.dir
-C:/Users/user/Desktop/Projects/Flower_Shop/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/user/Desktop/Projects/Flower_Shop/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/zaha/Workspace/Other shits/FlowerShop/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/zaha/Workspace/Other shits/FlowerShop/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/zaha/Workspace/Other shits/FlowerShop/cmake-build-debug/CMakeFiles/Flower_Shop.dir

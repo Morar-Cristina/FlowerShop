@@ -53,6 +53,21 @@ void FlowerController::redo() {
     repo.redo();
 }
 
+std::vector<Flower>
+FlowerController::filter(std::string color, std::string species,
+                         std::string season, double price) {
+    std::vector<Flower> flowers = repo.getAll();
+    std::vector<Flower> result;
+    for (Flower i: flowers) {
+        if (i.getColor() == color || color == "*")
+            if (i.getSpecies() == species || species == "*")
+                if (i.getSeason() == season || season == "*")
+                    if (double_compare::equal(i.getPrice(), price) || double_compare::equal(price, -1))
+                        result.push_back(i);
+    }
+    return result;
+}
+
 
 
 

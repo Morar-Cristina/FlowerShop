@@ -22,7 +22,7 @@ public:
 
     Flower(unsigned id, std::string color, std::string species, std::string season, double price);
 
-    //Flower(Flower &rhs);
+    Flower(const Flower &rhs);
 
     ~Flower();
 

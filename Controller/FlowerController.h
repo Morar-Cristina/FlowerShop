@@ -6,6 +6,7 @@
 #include "../Domain/Flower.h"
 #include "../Repository/IRepo.h"
 #include <vector>
+#include "../Utils/double_compare.h"
 
 #ifndef FLOWER_SHOP_FLOWERCONTROLLER_H
 #define FLOWER_SHOP_FLOWERCONTROLLER_H
@@ -32,6 +33,8 @@ public:
     void redo();
 
     std::vector<Flower> readFlowers();
+
+    std::vector<Flower> filter(std::string color, std::string species, std::string season, double price);
 };
 
 

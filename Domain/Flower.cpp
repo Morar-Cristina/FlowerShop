@@ -75,17 +75,17 @@ bool Flower::operator!=(const Flower &rhs) const {
 }
 
 
-/*
-Flower::Flower(Flower &rhs) {
-   // if (*this != rhs) {
+
+Flower::Flower(const Flower &rhs) {
+   if (*this != rhs) {
         this->id = rhs.id;
         this->color = rhs.color;
         this->species = rhs.species;
         this->season = rhs.season;
         this->price = rhs.price;
-    //}
+   }
 }
-*/
+
 std::ostream &operator<<(std::ostream &os, const Flower &flower) {
     os << "Flower{" << '\n' << "id: " << flower.id << '\n' <<
        " color: " << flower.color << '\n'
