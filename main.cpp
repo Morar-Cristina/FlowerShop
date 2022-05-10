@@ -1,12 +1,12 @@
 #include "Tests/AllTests.h"
-#include "Repository/RepoInMemory.h"
+#include "Repository/RepoInCsv.h"
 #include "Controller/FlowerController.h"
 #include "UI/Console.h"
 
 int main() {
     AllTests::run_tests();
 
-    RepoInMemory<Flower> repo;
+    RepoInCsv<Flower> repo("flowers.csv");
     FlowerController controller(repo);
     Console console(controller);
 

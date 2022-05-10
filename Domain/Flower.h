@@ -4,6 +4,9 @@
 
 #include <string>
 #include <ostream>
+#include <istream>
+#include <vector>
+#include <sstream>
 
 #ifndef FLOWER_SHOP_FLOWER_H
 #define FLOWER_SHOP_FLOWER_H
@@ -23,6 +26,8 @@ public:
     Flower(unsigned id, std::string color, std::string species, std::string season, double price);
 
     Flower(const Flower &rhs);
+
+    explicit Flower(std::vector<std::string> &data);
 
     ~Flower();
 
@@ -51,6 +56,8 @@ public:
     void setPrice(double price);
 
     friend std::ostream &operator<<(std::ostream &os, const Flower &flower);
+
+    std::string toCSV() const;
 };
 
 

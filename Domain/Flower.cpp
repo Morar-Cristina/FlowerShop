@@ -96,4 +96,18 @@ std::ostream &operator<<(std::ostream &os, const Flower &flower) {
     return os;
 }
 
+Flower::Flower(std::vector<std::string> &data) {
+    this->id = std::stoi(data[0]);
+    this->color = data[1];
+    this->species = data[2];
+    this->season = data[3];
+    this->price = std::stod(data[4]);
+}
+
+std::string Flower::toCSV() const {
+    std::stringstream ss;
+    ss << id << "," << color << "," << species << "," << season << "," << price;
+    return ss.str();
+}
+
 Flower::~Flower() = default;
